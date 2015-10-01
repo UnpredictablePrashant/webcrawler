@@ -6,7 +6,8 @@ from bs4 import BeautifulSoup
 def webcrawler(max_pages):
 	search=raw_input("Enter the type of website you want to search: ")
 	page = 1
-	fd = open('output.txt','w') # open the result file in write mode
+	filename = search + ".txt"
+	fd = open(filename,'w') # open the result file in write mode
 	old_stdout = sys.stdout   #store the default system handler to be able to restore it
 	sys.stdout = fd #file is being used by print as destination 
 	print "This is the list of best websites enlisted under the category: ", search # statement is added to file
