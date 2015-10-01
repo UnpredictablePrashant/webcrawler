@@ -29,7 +29,7 @@ def webcrawler(max_pages):
 		page+=1
 	fd.close() 
 		
-webcrawler(10)
+webcrawler(200)
 
 
 
